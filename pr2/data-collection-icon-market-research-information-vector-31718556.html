@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="preconnect" href="https://cdn.vectorstock.com">
+	<link rel="preconnect" href="https://www.googletagmanager.com">
+	<link rel="preconnect" href="https://www.google-analytics.com">
+	<meta name="theme-color" content="#101122">
+	<script type="text/javascript" nonce="oa/Ml8huL71fQhkkEHM7ZDySC+XdzgP0QAuXIM2RyHc=">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"02e09611df",applicationID:"156179534"};;/*! For license information please see nr-loader-rum-1.241.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={5763:(e,t,n)=>{n.d(t,{P_:()=>g,Mt:()=>h,C5:()=>s,DL:()=>b,OP:()=>E,lF:()=>k,Yu:()=>w,Dg:()=>p,CX:()=>c,GE:()=>y,sU:()=>j});var r=n(8632),i=n(9567);const a={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a),(0,r.Qy)(e,o[e],"info")}var u=n(7056);const d=()=>{const e={block_selector:"[data-nr-block]",mask_input_options:{password:!0}};return{proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:u.oD,inactiveMs:u.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,mask_text_selector:"*",mask_all_inputs:!0,get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){e.block_selector+=",".concat(t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){e.mask_input_options={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},l={},f="All configuration objects require an agent identifier!";function g(e){if(!e)throw new Error(f);if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function p(e,t){if(!e)throw new Error(f);l[e]=(0,i.D)(t,d()),(0,r.Qy)(e,l[e],"config")}function h(e,t){if(!e)throw new Error(f);var n=g(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const v={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},m={};function b(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!m[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return m[e]}function y(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");m[e]=(0,i.D)(t,v),(0,r.Qy)(e,m[e],"loader_config")}const w=(0,r.mF)().o;var A=n(385),x=n(6818);const _={buildEnv:x.Re,customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(A._A?.performance?.timeOrigin||A._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+A._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof A._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0},D={};function E(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,_),(0,r.Qy)(e,D[e],"runtime")}function k(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(n).length?e:n;for(let o in a)if(void 0!==e[o])try{"object"==typeof e[o]&&"object"==typeof t[o]?n[o]=i(e[o],t[o]):n[o]=e[o]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>a,q4:()=>r});const r="1.241.0",i="PROD",a="CDN"},385:(e,t,n)=>{n.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>r,ux:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=Boolean("hidden"===a?.document?.visibilityState),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(r&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,n)=>{n.d(t,{w:()=>a});var r=n(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>d,R:()=>c});var r=n(8325),i=n(1284),a=n(4322),o=n(3325);const s={};function c(e,t){const n={staged:!1,priority:o.p[t]||0};u(e),s[e].get(t)||s[e].set(t,n)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const n=[...s[e]];function o(t){const n=e?r.ee.get(e):r.ee,o=a.X.handlers;if(n.backlog&&o){var s=n.backlog[t],c=o[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete o[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((t=>{let[n]=t;s[e].delete(n),o(n)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,n)=>{n.d(t,{A:()=>c,ee:()=>u});var r=n(8632),i=n(2210),a=n(5763);class o{constructor(e){this.contextId=e}}var s=n(3117);const c="nr@context:".concat(s.a),u=function e(t,n){var r={},s={},d={},f=!1;try{f=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var n=r[e];if(!n)return;for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)},emit:function(e,n,r,i,a){!1!==a&&(a=!0);if(u.aborted&&!i)return;t&&a&&t.emit(e,n,r);for(var o=p(r),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(o,n);var f=b()[s[e]];f&&f.push([g,e,n,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const n=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[r,i]=e;s[i]=t,t in n||(n[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:n,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){r[e]=v(e).concat(t)}function v(e){return r[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,r.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(8325).ee.get("handle");function i(e,t,n,i,a){a?(a.buffer([e],i),a.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>a});var r=n(5546);a.on=o;var i=a.handlers={};function a(e,t,n,a){o(a||r.E,i,e,t,n)}function o(e,t,n,i,a){a||(a="feature"),e||(e=r.E);var o=t[a]=t[a]||{};(o[n]=o[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var r=n(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(n,r))}},3117:(e,t,n)=>{n.d(t,{a:()=>r});const r=(0,n(4402).Rl)()},4402:(e,t,n)=>{n.d(t,{Rl:()=>o,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?a(t,++n).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const o=[];for(var s=0;s<e;s++)o.push(a(n,++i).toString(16));return o.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>a,oD:()=>i});const r="NRBA",i=144e5,a=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>u});var r=n(8325),i=n(5546),a=n(3325);const o={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},s=new Set;function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(s.has(t)||Object.entries(e).forEach((e=>{let[t,r]=e;o[t]?o[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),u[t]=Boolean(r)})),Object.keys(o).forEach((e=>{void 0===u[e]&&(o[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),u[e]=!1)})),s.add(t))}const u={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>a});var r=n(8325);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>o,b:()=>a});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,r.bP)("load",e,t)}function o(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>a,fP:()=>o,gG:()=>d,mF:()=>s});var r=n(7894),i=n(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=o();const a=i.initializedAgents||{},s=a[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...a,[e]:{...s,[n]:t}},i}function u(e,t){o()[e]=t}function d(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>a,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>o});const r=n(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewEvent},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>a});var r=n(5763),i=n(8325);class a{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},7530:(e,t,n)=>{n.d(t,{j:()=>b});var r=n(3325),i=n(5763),a=n(5546),o=n(8325),s=n(7894),c=n(8e3),u=n(3960),d=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...r))})),a.length>1?a:a[0]}(t,...r)}}))}var h=n(2587);const v=e=>{n.p=e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:x,runtime:_={loaderType:b},exposed:D=!0}=t;const E=(0,g.gG)();A||(w=E.init,A=E.info,x=E.loader_config),(0,i.Dg)(e,w||{}),(0,i.GE)(e,x||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e,A);const j=(0,i.P_)(e),k=[A.beacon,A.errorBeacon];m||(m=!0,j.proxy.assets&&(v(j.proxy.assets+"/"),k.push(j.proxy.assets)),j.proxy.beacon&&k.push(j.proxy.beacon)),_.denyList=[...j.ajax.deny_list||[],...j.ajax.block_internal?k:[]],(0,i.sU)(e,_),p();const T=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,a){const o=(0,i.C5)(e);return null===n?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:n}}),A(v,r,!0,a||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,r.D.metrics,p);const n=Object.values(r.D);if(void 0===e)e=n;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!n.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(n));e.includes(r.D.pageViewEvent)||e.push(r.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,o="function"==typeof t;return(0,a.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],n),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(75).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},d.il?(0,u.b)((()=>x()),!0):x(),g}(e,y);return(0,g.Qy)(e,T,"api"),(0,g.Qy)(e,D,"exposed"),(0,g.EZ)("activatedFeatures",h.T),T}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var a=r[e]={exports:{}};return n[e](a,a.exports,i),a.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>"nr-rum-1.241.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.241.0.PROD:",i.l=(n,r,a,o)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+a){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var a=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var a=n&&("load"===n.type?"missing":n.type),o=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,a,[o,s,c]=n,u=0;if(o.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},n=self["webpackChunk:NRBA-1.241.0.PROD"]=self["webpackChunk:NRBA-1.241.0.PROD"]||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})(),(()=>{var e=i(50);class t{addPageAction(t,n){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,n){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,n,r){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,n){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setApplicationVersion(t){(0,e.Z)("Call to agent api setApplicationVersion failed. The agent is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,n){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}start(t){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var n=i(3325),r=i(5763);const a=Object.values(n.D);function o(e){const t={};return a.forEach((n=>{t[n]=function(e,t){return!1!==(0,r.Mt)(t,"".concat(e,".enabled"))}(n,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,n){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,r.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,n)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const n=l.il&&!0===(0,r.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let r;try{if(n){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));r=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,r))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:n}=await e(this.featureName,"aggregate");this.featAggregate=new n(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),a(!1)}};l.il?(0,d.b)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==n.D.sessionReplay||!!r.Yu.MO&&(!1!==(0,r.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,n),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var a=this.getBucket(e,t,n,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,n){t[e]=b(n,t[e])})),t}(r,a.metrics),a}merge(e,t,n,r,i){var a=this.getBucket(e,t,r,i);if(a.metrics){var o=a.metrics;o.count+=n.count,(0,v.D)(n,(function(e,t){if("count"!==e){var r=o[e],i=n[e];i&&!i.c?o[e]=b(i.t,r):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=b(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=w(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var x=i(8632),_=i(4402),D=i(4351);var E=i(5546),j=i(7956),k=i(3239),T=i(7894),N=i(9251);class S extends f{static featureName=N.t;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,n),l.il&&((0,j.N)((()=>(0,E.p)("docHidden",[(0,T.z)()],void 0,N.t,this.ee)),!0),(0,k.bP)("pagehide",(()=>(0,E.p)("winPagehide",[(0,T.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var P=i(3081);class C extends f{static featureName=P.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,n),this.importAggregator()}}new class extends t{constructor(t){let n=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,_.ky)(16);super(),l._A?(this.agentIdentifier=n,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),Object.assign(this,(0,s.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,r.C5)(this.agentIdentifier),init:(0,r.P_)(this.agentIdentifier),loader_config:(0,r.DL)(this.agentIdentifier),runtime:(0,r.OP)(this.agentIdentifier)}}run(){const t="features";try{const r=o(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>n.p[e.featureName]-n.p[t.featureName])),i.forEach((t=>{if(r[t.featureName]||t.featureName===n.D.pageViewEvent){const i=function(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.sessionReplay:return[n.D.sessionTrace];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>r[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,x.Qy)(this.agentIdentifier,this.features,t)}catch(n){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",n);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,S,C],loaderType:"lite"})})()})();</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="csrf-name" content="csrf650def9ca04ba">
+	<meta name="csrf-value" content="9a06f1c780155251dbe8957f43f8be38">
+	<meta name="csp-nonce" content="oa/Ml8huL71fQhkkEHM7ZDySC+XdzgP0QAuXIM2RyHc=">
+	<meta name="cart-hash" content="d751713988987e9331980363e24189ce">
+	<meta name="live-settings" content="[]">
+	<meta name="twitter:site" content="@VectorStock">
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="fb:app_id" content="241100862642313">
+
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="VectorStock Search" href="https://www.vectorstock.com/xml/searchbox.xml">
+
+	<title>Data collection icon market research information Vector Image</title>
+	<meta name="description" content="Data Collection Icon. Market research. Information about market, company and customers is accumulated in a large box. Flat vector illustration. Download a free preview or high-quality Adobe Illustrator (ai), EPS, PDF vectors and high-res JPEG and PNG images.">
+		<meta name="robots" content="max-image-preview:large">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-information-vector-31718556">
+	<meta property="og:title" content="Data collection icon market research information vector image on VectorStock">
+	<meta property="og:description" content="Data Collection Icon. Market research. Information about market, company and customers is accumulated in a large box. Flat vector illustration. Download a free preview or high-quality Adobe Illustrator (ai), EPS, PDF vectors and high-res JPEG and PNG images.">
+	<meta property="og:image" content="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+	<meta property="og:image:url" content="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+	<meta property="og:image:secure_url" content="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="1000">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-information-vector-31718556">
+	<meta name="twitter:title" content="Data collection icon market research information vector image">
+	<meta name="twitter:description" content="Data Collection Icon. Market research. Information about market, company and customers is accumulated in a large box. Flat vector illustration.">
+	<meta name="twitter:image" content="https://cdn2.vectorstock.com/i/thumb-large/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-information-vector-31718556">
+
+	<link rel="stylesheet" type="text/css" href="/cache/common1692227711.min.css">
+	<link rel="stylesheet" type="text/css" href="/cache/common-payment1692227711.min.css">
+	<link rel="stylesheet" type="text/css" href="/cache/vector1692227711.min.css">
+	<script nonce='oa/Ml8huL71fQhkkEHM7ZDySC+XdzgP0QAuXIM2RyHc='>window.dataLayer=window.dataLayer||[];(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;var n=d.querySelector('[nonce]');n&&j.setAttribute('nonce',n.nonce||n.getAttribute('nonce'));f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NL6HLLR');</script>
+	<script src="/cache/common1694743569.min.js"></script>
+	<script src="/cache/common-payment-paddle1694743569.min.js"></script>
+	<script src="/cache/vector1694743569.min.js"></script>
+	<link rel="preload" href="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg" as="image" type="image/jpeg">
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL6HLLR"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="/" title="VectorStock&reg;">VectorStock&reg;</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="focused empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search&hellip;" maxlength="50" autofocus>
+								<button type="button" data-action="clear">&times;</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					</fieldset>
+										<button type="button" data-action="searchbyimage">
+						<span class="icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 29" role="img">
+								<polyline points="17.7,24.9 6.1,24.9 6.1,4.1 18.4,4.1 22.9,8.6 22.9,17.1"/>
+								<polygon class="fill" points="17.7,4.1 17.7,9.4 22.9,9.4 22.9,8.6 18.4,4.1"/>
+								<circle class="fill" cx="11.4" cy="9.9" r="1.7"/>
+								<polygon class="fill" points="12.9,13.3 15.9,17.3 17.6,14.9 20.6,19.1 8.8,19.1"/>
+								<polyline points="25.6,23.4 22.9,20.7 20.2,23.4 "/>
+								<line x1="22.9" y1="20.7" x2="22.9" y2="28.4"/>
+							</svg>
+						</span>
+						<span class="tooltip">
+							<span>Try searching by image!</span>
+						</span>
+					</button>
+										<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+				<li><a href="/royalty-free-vectors">All Vectors</a></li>
+				<li><a href="/free-vectors">Free Vectors</a></li>
+			</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="/popular-categories" title="Popular Categories">Categories</a></li>
+				<li><a href="/pricing" title="Pricing">Pricing</a></li>
+				<li class="account">
+					<button type="button" data-action="signup">Sign Up</button>
+					<button type="button" data-action="login">Login</button>
+				</li>
+			</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+	<nav id="searchrelated"></nav>	
+
+	<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+						<ul>
+							<li><a href="/signup">Sign Up</a></li>
+							<li data-action="login"><a href="/?login=1">Login&hellip;</a></li>
+							<li><a href="/pricing">Pricing</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form method="get" action="/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Login</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We&apos;re the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you&apos;re a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="/signup">Sign up now, it&rsquo;s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="/auth/login" method="post">
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2"  maxlength="72">
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Login</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1" />
+					</li>
+					<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="/royalty-free-vectors/research-vectors">
+							<span itemprop="name">Research Vectors</span>
+						</a>
+						<meta itemprop="position" content="2" />
+					</li>
+				</ol>
+
+				<h1>Data collection icon market research information vector&nbsp;image</h1>
+
+				<figure class="target">
+					<div class="highres" data-src="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg" style="padding-top: 99.9%;">
+						<picture>
+							<source type="image/webp" srcset="https://cdn.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.webp">
+							<source type="image/jpeg" srcset="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+							<img src="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg" importance="high" title="Data collection icon market research information vector image" alt="Data collection icon market research information">
+						</picture>
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payment="single-image">
+					<input type="hidden" id="vector_id" value="31718556">
+					<input type="hidden" id="vector_title" value="Data collection icon market research information">
+					<input type="hidden" id="vector_description" value="Data Collection Icon. Market research. Information about market, company and customers is accumulated in a large box. Flat vector illustration. Download a free preview or high-quality Adobe Illustrator (ai), EPS, PDF vectors and high-res JPEG and PNG images.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-information-vector-31718556">
+					<input type="hidden" id="vector_media" value="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+					<input type="hidden" id="vector_ratio" value="1">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="Quarta">
+					<input type="hidden" id="account_user" value="0">
+					<input type="hidden" id="vector_transparent_png" value="0">
+					<input type="hidden" id="vector_download_urls" value="[]">
+					<input type="hidden" id="vector_license_options" value="[{&quot;type&quot;:&quot;standard&quot;,&quot;label&quot;:&quot;Standard License&quot;,&quot;cost&quot;:{&quot;single-image&quot;:14.99,&quot;credits&quot;:1,&quot;subscription&quot;:1}},{&quot;type&quot;:&quot;expanded&quot;,&quot;label&quot;:&quot;Expanded License&quot;,&quot;cost&quot;:{&quot;single-image&quot;:39.99,&quot;credits&quot;:30}}]">
+					<input type="hidden" id="account_filetype" value="zip">
+					<input type="hidden" id="account_customizations" value="[]">
+					<input type="hidden" id="account_cloud" value="[{&quot;type&quot;:&quot;googledrive&quot;,&quot;status&quot;:&quot;connect&quot;}]">
+					
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset class="checked">
+									<label for="f_license_standard">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">You can use the vector for personal and commercial purposes.</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">You can use the vector on items for resale and print-on-demand.</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Graphic Design</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Web Design</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Social Media</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Multi-user</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Resale Items</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Print on Demand</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<!--
+						-- OPTION: License type: Exclusive
+						-->
+						<div class="option" data-type="ownership">
+							<h6>
+								<span class="type">Ownership</span>
+								<a href="/faq/members/what-is-an-exclusive-buyout">Learn More</a>
+							</h6>
+							<div class="optgroup toggroup" data-id="rights" data-enabled="0">
+								<fieldset>
+									<label for="f_ownership_exclusive">
+										<span class="toggle">
+											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" focusable="false" role="img"><path d="M3.9,8.3 7.2,5 3.9,1.7"/></svg>
+										</span>
+										<span class="label">Exclusive</span>
+										<span class="descr">If you would like to buy this vector exclusively, send the artist a request below:</span>
+										<button type="button" data-copy-process="Sending request" data-copy-success="Request has been sent">
+											<span class="icon"></span>
+											<span class="label">Ask for Exclusive Buyout</span>
+										</button>
+									</label>
+								</fieldset>
+							</div>
+							
+							<div class="help">
+								<p>Want to have this vector image all to yourself? An Exclusive Buyout secures the full rights of this vector.</p>
+								<p>We will remove this vector from our library and the artist will cease selling the&nbsp;artwork.</p>
+							</div>
+						</div>
+						
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="/pricing">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+								<fieldset class="checked" >
+									<label for="f_payment_standard_single-image">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image"  checked="checked" tabindex="5">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollar">USD</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69&cent;</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+								<fieldset class="checked">
+									<label for="f_payment_expanded_single-image">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="39.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>39.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollar">USD</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>39.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+						<!--
+						-- OPTION: Payment options (Exclusive)
+						-->
+						<div class="option" data-type="payment" data-license="exclusive">
+							<h6><span class="type">Payment</span></h6>
+							<div class="optgroup radgroup" data-license="exclusive">
+								<fieldset class="checked">
+									<label for="f_payment_exclusive_ppi">
+										<input type="radio" id="f_payment_exclusive_ppi" name="payment_exclusive" data-cost="399" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>399</var></span>
+									</label>
+								</fieldset>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Customization
+						-->
+						<div class="option" data-type="customization">
+							<h6><span class="type">Extra Services</span><a href="/faq/members/what-is-the-customize-image-service">Learn More</a></h6>
+							<div class="optgroup chkgroup">
+								<fieldset>
+									<label for="f_payment_customization">
+										<input type="checkbox" id="f_payment_customization" name="payment_customization" data-cost="85" value="customization" tabindex="12">
+										<span class="label">Customize image</span>
+										<span class="descr">Only available with Pay-per-Image</span>
+										<span class="value"><small>$</small><var>85.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>Love the image but just need a few modifications? Let our talented artists do the work for you!</p>
+								<p>We&rsquo;ll connect you with a designer who can make updates and send you the artwork in a format of your choice.</p>
+								<h4>Examples</h4>
+								<ul>
+									<li>Change the text</li>
+									<li>Modify colors</li>
+									<li>Resize to new dimensions</li>
+									<li>Include logo or symbol</li>
+									<li>Add your company or business name</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help">
+							<span class="loading"><span class="label">Loading Details...</span></span>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="square" class="target">
+					<div class="highres" data-src="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg" style="padding-top: 99.9%;">
+						<picture>
+							<source type="image/webp" srcset="https://cdn.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.webp">
+							<source type="image/jpeg" srcset="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+							<img src="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg" importance="high" title="Data collection icon market research information vector image" alt="Data collection icon market research information">
+						</picture>
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<ul>
+								<li><button type="button" data-action="pinterest"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"/></svg></span><span class="label">Save to Pinterest</span></button></li>
+								<li><button type="button" data-action="facebook"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"/></svg></span><span class="label">Post to Facebook</span></button></li>
+								<li><button type="button" data-action="twitter"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"/></svg></span><span class="label">Post to Twitter</span></button></li>
+							</ul>
+							<ul>
+								<li><button type="button" data-action="email"><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M24.37,2.25c-0.07,0-0.15,0.01-0.22,0.04l-2.75,1L0.24,12.14c-0.3,0.13-0.33,0.54-0.05,0.71l3.94,2.39l0.99,0.6l1.94,5.58c0.05,0.14,0.25,0.1,0.25-0.04l0.03-4.19v-0.05l8.87-7.49c0.15-0.13,0.37-0.12,0.52,0.01l0,0c0.17,0.15,0.17,0.42,0.01,0.58L8.85,18v0.18l7.53,4.52c0.21,0.13,0.48,0.04,0.57-0.19l7.89-19.11l0.11-0.28C25.13,2.68,24.8,2.25,24.37,2.25z"/></svg></span><span class="label">Send by Email</span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>31718556</dd></dl>
+							</li>
+							<li class="meta-color-mode">
+								<dl><dt>Color Mode</dt><dd>RGB</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd>
+										<a href="/royalty-free-vectors/vectors-by_Quarta" rel="nofollow">Quarta</a>
+										<button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button>
+										<button type="button" data-action="notfollow" title="Hide Artists that you don't like to exclude their images in search results."><span class="label">Hide</span></button>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="0"><span class="icon">&hearts;</span><span class="label">Like</span><span class="tally"></span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/ImageObject" itemscope>
+					<meta itemprop="contentUrl" content="https://cdn2.vectorstock.com/i/1000x1000/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+					<meta itemprop="thumbnailUrl" content="https://cdn2.vectorstock.com/i/thumb-large/85/56/data-collection-icon-market-research-information-vector-31718556.jpg">
+					<meta itemprop="name" content="Data collection icon market research information">
+					<meta itemprop="description" content="Data Collection Icon. Market research. Information about market, company and customers is accumulated in a large box. Flat vector illustration. Download a free preview or high-quality Adobe Illustrator (ai), EPS, PDF vectors and high-res JPEG and PNG images. vector image">
+					<meta itemprop="author" content="Quarta"/>
+					<meta itemprop="datePublished" content="2020-06-15">
+					<meta itemprop="license" content="https://www.vectorstock.com/faq/members/standard-license">
+					<meta itemprop="acquireLicensePage" content="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-information-vector-31718556">
+					<meta itemprop="sourceOrganization" content="VectorStock.com">
+				</div>
+			</div>
+
+		</section>
+
+
+		<section id="vs-related">
+			<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery_mosaic">
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/concept-big-data-modern-conceptual-for-banner-vector-25976489">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.webp 2x, https://cdn.vectorstock.com/i/preview-1x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.webp 3x, https://cdn.vectorstock.com/i/preview-1x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.webp 2x, https://cdn.vectorstock.com/i/preview-lt/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/64/89/concept-big-data-modern-conceptual-for-banner-vector-25976489.jpg" data-id="25976489" data-title="concept big data modern conceptual for banner" data-ratio="1.6" loading="lazy" alt="Concept big data modern conceptual for banner vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/crm-concept-customer-relationship-management-vector-23829517">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/95/17/crm-concept-customer-relationship-management-vector-23829517.webp 2x, https://cdn.vectorstock.com/i/preview-1x/95/17/crm-concept-customer-relationship-management-vector-23829517.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/95/17/crm-concept-customer-relationship-management-vector-23829517.webp 3x, https://cdn.vectorstock.com/i/preview-1x/95/17/crm-concept-customer-relationship-management-vector-23829517.webp 2x, https://cdn.vectorstock.com/i/preview-lt/95/17/crm-concept-customer-relationship-management-vector-23829517.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/95/17/crm-concept-customer-relationship-management-vector-23829517.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/95/17/crm-concept-customer-relationship-management-vector-23829517.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/95/17/crm-concept-customer-relationship-management-vector-23829517.jpg" data-id="23829517" data-title="crm concept customer relationship management" data-ratio="1.476" loading="lazy" alt="Crm concept customer relationship management vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/research-and-analysis-of-information-concept-vector-20987073">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/70/73/research-and-analysis-of-information-concept-vector-20987073.webp 2x, https://cdn.vectorstock.com/i/preview-1x/70/73/research-and-analysis-of-information-concept-vector-20987073.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/70/73/research-and-analysis-of-information-concept-vector-20987073.webp 3x, https://cdn.vectorstock.com/i/preview-1x/70/73/research-and-analysis-of-information-concept-vector-20987073.webp 2x, https://cdn.vectorstock.com/i/preview-lt/70/73/research-and-analysis-of-information-concept-vector-20987073.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/70/73/research-and-analysis-of-information-concept-vector-20987073.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/70/73/research-and-analysis-of-information-concept-vector-20987073.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/70/73/research-and-analysis-of-information-concept-vector-20987073.jpg" data-id="20987073" data-title="research and analysis of information concept" data-ratio="1" loading="lazy" alt="Research and analysis of information concept vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/financial-research-isometric-landing-page-vector-35981015">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/10/15/financial-research-isometric-landing-page-vector-35981015.webp 2x, https://cdn.vectorstock.com/i/preview-1x/10/15/financial-research-isometric-landing-page-vector-35981015.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/10/15/financial-research-isometric-landing-page-vector-35981015.webp 3x, https://cdn.vectorstock.com/i/preview-1x/10/15/financial-research-isometric-landing-page-vector-35981015.webp 2x, https://cdn.vectorstock.com/i/preview-lt/10/15/financial-research-isometric-landing-page-vector-35981015.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/10/15/financial-research-isometric-landing-page-vector-35981015.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/10/15/financial-research-isometric-landing-page-vector-35981015.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/10/15/financial-research-isometric-landing-page-vector-35981015.jpg" data-id="35981015" data-title="financial research isometric landing page" data-ratio="1.588" loading="lazy" alt="Financial research isometric landing page vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/market-strategy-analysis-marketing-research-vector-11096662">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/66/62/market-strategy-analysis-marketing-research-vector-11096662.webp 2x, https://cdn.vectorstock.com/i/preview-1x/66/62/market-strategy-analysis-marketing-research-vector-11096662.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/66/62/market-strategy-analysis-marketing-research-vector-11096662.webp 3x, https://cdn.vectorstock.com/i/preview-1x/66/62/market-strategy-analysis-marketing-research-vector-11096662.webp 2x, https://cdn.vectorstock.com/i/preview-lt/66/62/market-strategy-analysis-marketing-research-vector-11096662.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/66/62/market-strategy-analysis-marketing-research-vector-11096662.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/66/62/market-strategy-analysis-marketing-research-vector-11096662.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/66/62/market-strategy-analysis-marketing-research-vector-11096662.jpg" data-id="11096662" data-title="market strategy analysis marketing research" data-ratio="1.428" loading="lazy" alt="Market strategy analysis marketing research vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/human-brain-lab-analysis-concept-vector-29264416">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/44/16/human-brain-lab-analysis-concept-vector-29264416.webp 2x, https://cdn.vectorstock.com/i/preview-1x/44/16/human-brain-lab-analysis-concept-vector-29264416.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/44/16/human-brain-lab-analysis-concept-vector-29264416.webp 3x, https://cdn.vectorstock.com/i/preview-1x/44/16/human-brain-lab-analysis-concept-vector-29264416.webp 2x, https://cdn.vectorstock.com/i/preview-lt/44/16/human-brain-lab-analysis-concept-vector-29264416.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/44/16/human-brain-lab-analysis-concept-vector-29264416.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/44/16/human-brain-lab-analysis-concept-vector-29264416.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/44/16/human-brain-lab-analysis-concept-vector-29264416.jpg" data-id="29264416" data-title="human brain lab analysis concept" data-ratio="1" loading="lazy" alt="Human brain lab analysis concept vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/isometric-concept-of-business-analysis-analytics-vector-39809471">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.webp 2x, https://cdn.vectorstock.com/i/preview-1x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.webp 3x, https://cdn.vectorstock.com/i/preview-1x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.webp 2x, https://cdn.vectorstock.com/i/preview-lt/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/94/71/isometric-concept-of-business-analysis-analytics-vector-39809471.jpg" data-id="39809471" data-title="isometric concept of business analysis analytics" data-ratio="1.676" loading="lazy" alt="Isometric concept of business analysis analytics vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/working-on-startup-flat-icon-vector-36000918">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/09/18/working-on-startup-flat-icon-vector-36000918.webp 2x, https://cdn.vectorstock.com/i/preview-1x/09/18/working-on-startup-flat-icon-vector-36000918.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/09/18/working-on-startup-flat-icon-vector-36000918.webp 3x, https://cdn.vectorstock.com/i/preview-1x/09/18/working-on-startup-flat-icon-vector-36000918.webp 2x, https://cdn.vectorstock.com/i/preview-lt/09/18/working-on-startup-flat-icon-vector-36000918.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/09/18/working-on-startup-flat-icon-vector-36000918.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/09/18/working-on-startup-flat-icon-vector-36000918.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/09/18/working-on-startup-flat-icon-vector-36000918.jpg" data-id="36000918" data-title="working on startup flat icon" data-ratio="1" loading="lazy" alt="Working on startup flat icon vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/financial-analysis-landing-page-website-vector-22312588">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/25/88/financial-analysis-landing-page-website-vector-22312588.webp 2x, https://cdn.vectorstock.com/i/preview-1x/25/88/financial-analysis-landing-page-website-vector-22312588.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/25/88/financial-analysis-landing-page-website-vector-22312588.webp 3x, https://cdn.vectorstock.com/i/preview-1x/25/88/financial-analysis-landing-page-website-vector-22312588.webp 2x, https://cdn.vectorstock.com/i/preview-lt/25/88/financial-analysis-landing-page-website-vector-22312588.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/25/88/financial-analysis-landing-page-website-vector-22312588.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/25/88/financial-analysis-landing-page-website-vector-22312588.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/25/88/financial-analysis-landing-page-website-vector-22312588.jpg" data-id="22312588" data-title="financial analysis landing page website" data-ratio="1.564" loading="lazy" alt="Financial analysis landing page website vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/market-research-infographic-circle-concept-smart-vector-26990620">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.webp 2x, https://cdn.vectorstock.com/i/preview-1x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.webp 3x, https://cdn.vectorstock.com/i/preview-1x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.webp 2x, https://cdn.vectorstock.com/i/preview-lt/06/20/market-research-infographic-circle-concept-smart-vector-26990620.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/06/20/market-research-infographic-circle-concept-smart-vector-26990620.jpg" data-id="26990620" data-title="market research infographic circle concept smart" data-ratio="1" loading="lazy" alt="Market research infographic circle concept smart vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-analysis-report-online-on-laptop-vector-48287307">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/73/07/data-analysis-report-online-on-laptop-vector-48287307.webp 2x, https://cdn.vectorstock.com/i/preview-1x/73/07/data-analysis-report-online-on-laptop-vector-48287307.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/73/07/data-analysis-report-online-on-laptop-vector-48287307.webp 3x, https://cdn.vectorstock.com/i/preview-1x/73/07/data-analysis-report-online-on-laptop-vector-48287307.webp 2x, https://cdn.vectorstock.com/i/preview-lt/73/07/data-analysis-report-online-on-laptop-vector-48287307.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/73/07/data-analysis-report-online-on-laptop-vector-48287307.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/73/07/data-analysis-report-online-on-laptop-vector-48287307.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/73/07/data-analysis-report-online-on-laptop-vector-48287307.jpg" data-id="48287307" data-title="data analysis report online on laptop" data-ratio="1.416" loading="lazy" alt="Data analysis report online on laptop vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-analysis-report-online-on-laptop-vector-48125291">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/52/91/data-analysis-report-online-on-laptop-vector-48125291.webp 2x, https://cdn.vectorstock.com/i/preview-1x/52/91/data-analysis-report-online-on-laptop-vector-48125291.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/52/91/data-analysis-report-online-on-laptop-vector-48125291.webp 3x, https://cdn.vectorstock.com/i/preview-1x/52/91/data-analysis-report-online-on-laptop-vector-48125291.webp 2x, https://cdn.vectorstock.com/i/preview-lt/52/91/data-analysis-report-online-on-laptop-vector-48125291.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/52/91/data-analysis-report-online-on-laptop-vector-48125291.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/52/91/data-analysis-report-online-on-laptop-vector-48125291.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/52/91/data-analysis-report-online-on-laptop-vector-48125291.jpg" data-id="48125291" data-title="data analysis report online on laptop" data-ratio="1.416" loading="lazy" alt="Data analysis report online on laptop vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-analysis-strategy-concept-people-characters-vector-22349276">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.webp 2x, https://cdn.vectorstock.com/i/preview-1x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.webp 3x, https://cdn.vectorstock.com/i/preview-1x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.webp 2x, https://cdn.vectorstock.com/i/preview-lt/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/92/76/data-analysis-strategy-concept-people-characters-vector-22349276.jpg" data-id="22349276" data-title="data analysis strategy concept people characters" data-ratio="1.428" loading="lazy" alt="Data analysis strategy concept people characters vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/flat-medical-and-chemical-vector-4249274">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/92/74/flat-medical-and-chemical-vector-4249274.webp 2x, https://cdn.vectorstock.com/i/preview-1x/92/74/flat-medical-and-chemical-vector-4249274.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/92/74/flat-medical-and-chemical-vector-4249274.webp 3x, https://cdn.vectorstock.com/i/preview-1x/92/74/flat-medical-and-chemical-vector-4249274.webp 2x, https://cdn.vectorstock.com/i/preview-lt/92/74/flat-medical-and-chemical-vector-4249274.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/92/74/flat-medical-and-chemical-vector-4249274.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/92/74/flat-medical-and-chemical-vector-4249274.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/92/74/flat-medical-and-chemical-vector-4249274.jpg" data-id="4249274" data-title="flat medical and chemical" data-ratio="1" loading="lazy" alt="Flat medical and chemical vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/research-and-analysis-icon-vector-14450176">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/01/76/research-and-analysis-icon-vector-14450176.webp 2x, https://cdn.vectorstock.com/i/preview-1x/01/76/research-and-analysis-icon-vector-14450176.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/01/76/research-and-analysis-icon-vector-14450176.webp 3x, https://cdn.vectorstock.com/i/preview-1x/01/76/research-and-analysis-icon-vector-14450176.webp 2x, https://cdn.vectorstock.com/i/preview-lt/01/76/research-and-analysis-icon-vector-14450176.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/01/76/research-and-analysis-icon-vector-14450176.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/01/76/research-and-analysis-icon-vector-14450176.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/01/76/research-and-analysis-icon-vector-14450176.jpg" data-id="14450176" data-title="research and analysis icon" data-ratio="1" loading="lazy" alt="Research and analysis icon vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/advanced-data-analysis-landing-page-team-research-vector-36475351">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.webp 2x, https://cdn.vectorstock.com/i/preview-1x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.webp 3x, https://cdn.vectorstock.com/i/preview-1x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.webp 2x, https://cdn.vectorstock.com/i/preview-lt/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/53/51/advanced-data-analysis-landing-page-team-research-vector-36475351.jpg" data-id="36475351" data-title="advanced data analysis landing page team research" data-ratio="1.704" loading="lazy" alt="Advanced data analysis landing page team research vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/professional-pharmaceutical-worker-in-laboratory-vector-33949058">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.webp 2x, https://cdn.vectorstock.com/i/preview-1x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.webp 3x, https://cdn.vectorstock.com/i/preview-1x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.webp 2x, https://cdn.vectorstock.com/i/preview-lt/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/90/58/professional-pharmaceutical-worker-in-laboratory-vector-33949058.jpg" data-id="33949058" data-title="professional pharmaceutical worker in laboratory" data-ratio="1" loading="lazy" alt="Professional pharmaceutical worker in laboratory vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/market-research-presentation-template-cover-vector-26972171">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/21/71/market-research-presentation-template-cover-vector-26972171.webp 2x, https://cdn.vectorstock.com/i/preview-1x/21/71/market-research-presentation-template-cover-vector-26972171.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/21/71/market-research-presentation-template-cover-vector-26972171.webp 3x, https://cdn.vectorstock.com/i/preview-1x/21/71/market-research-presentation-template-cover-vector-26972171.webp 2x, https://cdn.vectorstock.com/i/preview-lt/21/71/market-research-presentation-template-cover-vector-26972171.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/21/71/market-research-presentation-template-cover-vector-26972171.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/21/71/market-research-presentation-template-cover-vector-26972171.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/21/71/market-research-presentation-template-cover-vector-26972171.jpg" data-id="26972171" data-title="market research presentation template cover" data-ratio="1" loading="lazy" alt="Market research presentation template cover vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/concept-for-business-analysis-investment-vector-11126267">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/62/67/concept-for-business-analysis-investment-vector-11126267.webp 2x, https://cdn.vectorstock.com/i/preview-1x/62/67/concept-for-business-analysis-investment-vector-11126267.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/62/67/concept-for-business-analysis-investment-vector-11126267.webp 3x, https://cdn.vectorstock.com/i/preview-1x/62/67/concept-for-business-analysis-investment-vector-11126267.webp 2x, https://cdn.vectorstock.com/i/preview-lt/62/67/concept-for-business-analysis-investment-vector-11126267.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/62/67/concept-for-business-analysis-investment-vector-11126267.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/62/67/concept-for-business-analysis-investment-vector-11126267.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/62/67/concept-for-business-analysis-investment-vector-11126267.jpg" data-id="11126267" data-title="concept for business analysis investment" data-ratio="1.252" loading="lazy" alt="Concept for business analysis investment vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/online-survey-template-vector-22948710">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/87/10/online-survey-template-vector-22948710.webp 2x, https://cdn.vectorstock.com/i/preview-1x/87/10/online-survey-template-vector-22948710.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/87/10/online-survey-template-vector-22948710.webp 3x, https://cdn.vectorstock.com/i/preview-1x/87/10/online-survey-template-vector-22948710.webp 2x, https://cdn.vectorstock.com/i/preview-lt/87/10/online-survey-template-vector-22948710.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/87/10/online-survey-template-vector-22948710.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/87/10/online-survey-template-vector-22948710.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/87/10/online-survey-template-vector-22948710.jpg" data-id="22948710" data-title="online survey template" data-ratio="1.504" loading="lazy" alt="Online survey template vector">
+							</picture>
+						</a>
+					</div></figure>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="25241194" data-title="data analysis" data-src="https://cdn5.vectorstock.com/i/thumbs/11/94/data-analysis-vector-25241194.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analysis-vector-25241194" title="data analysis vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/11/94/data-analysis-vector-25241194.jpg" title="data analysis" alt="data analysis vector image"></noscript></a></li>
+						<li data-id="34495949" data-title="two guys are involved in process control through" data-src="https://cdn5.vectorstock.com/i/thumbs/59/49/two-guys-are-involved-in-process-control-through-vector-34495949.jpg"><a href="//www.vectorstock.com/royalty-free-vector/two-guys-are-involved-in-process-control-through-vector-34495949" title="two guys are involved in process control through vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/59/49/two-guys-are-involved-in-process-control-through-vector-34495949.jpg" title="two guys are involved in process control through" alt="two guys are involved in process control through vector image"></noscript></a></li>
+						<li data-id="39944788" data-title="survey analysis system isometric web concept" data-src="https://cdn4.vectorstock.com/i/thumbs/47/88/survey-analysis-system-isometric-web-concept-vector-39944788.jpg"><a href="//www.vectorstock.com/royalty-free-vector/survey-analysis-system-isometric-web-concept-vector-39944788" title="survey analysis system isometric web concept vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/47/88/survey-analysis-system-isometric-web-concept-vector-39944788.jpg" title="survey analysis system isometric web concept" alt="survey analysis system isometric web concept vector image"></noscript></a></li>
+						<li data-id="11096636" data-title="market strategy analysis marketing research" data-src="https://cdn2.vectorstock.com/i/thumbs/66/36/market-strategy-analysis-marketing-research-vector-11096636.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-strategy-analysis-marketing-research-vector-11096636" title="market strategy analysis marketing research vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/66/36/market-strategy-analysis-marketing-research-vector-11096636.jpg" title="market strategy analysis marketing research" alt="market strategy analysis marketing research vector image"></noscript></a></li>
+						<li data-id="39841841" data-title="microscope isolated research equipment color icon" data-src="https://cdn2.vectorstock.com/i/thumbs/18/41/microscope-isolated-research-equipment-color-icon-vector-39841841.jpg"><a href="//www.vectorstock.com/royalty-free-vector/microscope-isolated-research-equipment-color-icon-vector-39841841" title="microscope isolated research equipment color icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/18/41/microscope-isolated-research-equipment-color-icon-vector-39841841.jpg" title="microscope isolated research equipment color icon" alt="microscope isolated research equipment color icon vector image"></noscript></a></li>
+						<li data-id="34553494" data-title="quantitative research method statistics survey get" data-src="https://cdn5.vectorstock.com/i/thumbs/34/94/quantitative-research-method-statistics-survey-get-vector-34553494.jpg"><a href="//www.vectorstock.com/royalty-free-vector/quantitative-research-method-statistics-survey-get-vector-34553494" title="quantitative research method statistics survey get vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/34/94/quantitative-research-method-statistics-survey-get-vector-34553494.jpg" title="quantitative research method statistics survey get" alt="quantitative research method statistics survey get vector image"></noscript></a></li>
+						<li data-id="42323041" data-title="seo keyword research analysis" data-src="https://cdn2.vectorstock.com/i/thumbs/30/41/seo-keyword-research-analysis-vector-42323041.jpg"><a href="//www.vectorstock.com/royalty-free-vector/seo-keyword-research-analysis-vector-42323041" title="seo keyword research analysis vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/30/41/seo-keyword-research-analysis-vector-42323041.jpg" title="seo keyword research analysis" alt="seo keyword research analysis vector image"></noscript></a></li>
+						<li data-id="25124468" data-title="big data analysis website landing page" data-src="https://cdn4.vectorstock.com/i/thumbs/44/68/big-data-analysis-website-landing-page-vector-25124468.jpg"><a href="//www.vectorstock.com/royalty-free-vector/big-data-analysis-website-landing-page-vector-25124468" title="big data analysis website landing page vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/44/68/big-data-analysis-website-landing-page-vector-25124468.jpg" title="big data analysis website landing page" alt="big data analysis website landing page vector image"></noscript></a></li>
+						<li data-id="8941871" data-title="medical laboratory conceptual" data-src="https://cdn2.vectorstock.com/i/thumbs/18/71/medical-laboratory-conceptual-vector-8941871.jpg"><a href="//www.vectorstock.com/royalty-free-vector/medical-laboratory-conceptual-vector-8941871" title="medical laboratory conceptual vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/18/71/medical-laboratory-conceptual-vector-8941871.jpg" title="medical laboratory conceptual" alt="medical laboratory conceptual vector image"></noscript></a></li>
+						<li data-id="30729841" data-title="report analysis and business research flat" data-src="https://cdn2.vectorstock.com/i/thumbs/98/41/report-analysis-and-business-research-flat-vector-30729841.jpg"><a href="//www.vectorstock.com/royalty-free-vector/report-analysis-and-business-research-flat-vector-30729841" title="report analysis and business research flat vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/98/41/report-analysis-and-business-research-flat-vector-30729841.jpg" title="report analysis and business research flat" alt="report analysis and business research flat vector image"></noscript></a></li>
+						<li data-id="12899931" data-title="statistics research icon analysis data" data-src="https://cdn2.vectorstock.com/i/thumbs/99/31/statistics-research-icon-analysis-data-vector-12899931.jpg"><a href="//www.vectorstock.com/royalty-free-vector/statistics-research-icon-analysis-data-vector-12899931" title="statistics research icon analysis data vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/99/31/statistics-research-icon-analysis-data-vector-12899931.jpg" title="statistics research icon analysis data" alt="statistics research icon analysis data vector image"></noscript></a></li>
+						<li data-id="25241195" data-title="data analytics website banner thin line" data-src="https://cdn1.vectorstock.com/i/thumbs/11/95/data-analytics-website-banner-thin-line-vector-25241195.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analytics-website-banner-thin-line-vector-25241195" title="data analytics website banner thin line vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/11/95/data-analytics-website-banner-thin-line-vector-25241195.jpg" title="data analytics website banner thin line" alt="data analytics website banner thin line vector image"></noscript></a></li>
+						<li data-id="39809470" data-title="isometric concept of business analysis analytics" data-src="https://cdn1.vectorstock.com/i/thumbs/94/70/isometric-concept-of-business-analysis-analytics-vector-39809470.jpg"><a href="//www.vectorstock.com/royalty-free-vector/isometric-concept-of-business-analysis-analytics-vector-39809470" title="isometric concept of business analysis analytics vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/94/70/isometric-concept-of-business-analysis-analytics-vector-39809470.jpg" title="isometric concept of business analysis analytics" alt="isometric concept of business analysis analytics vector image"></noscript></a></li>
+						<li data-id="21419275" data-title="analysis" data-src="https://cdn1.vectorstock.com/i/thumbs/92/75/analysis-vector-21419275.jpg"><a href="//www.vectorstock.com/royalty-free-vector/analysis-vector-21419275" title="analysis vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/92/75/analysis-vector-21419275.jpg" title="analysis" alt="analysis vector image"></noscript></a></li>
+						<li data-id="9021883" data-title="business report" data-src="https://cdn4.vectorstock.com/i/thumbs/18/83/business-report-vector-9021883.jpg"><a href="//www.vectorstock.com/royalty-free-vector/business-report-vector-9021883" title="business report vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/18/83/business-report-vector-9021883.jpg" title="business report" alt="business report vector image"></noscript></a></li>
+						<li data-id="26481536" data-title="business concept" data-src="https://cdn2.vectorstock.com/i/thumbs/15/36/business-concept-vector-26481536.jpg"><a href="//www.vectorstock.com/royalty-free-vector/business-concept-vector-26481536" title="business concept vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/15/36/business-concept-vector-26481536.jpg" title="business concept" alt="business concept vector image"></noscript></a></li>
+						<li data-id="22363631" data-title="modern flat design concept for system analysis" data-src="https://cdn2.vectorstock.com/i/thumbs/36/31/modern-flat-design-concept-for-system-analysis-vector-22363631.jpg"><a href="//www.vectorstock.com/royalty-free-vector/modern-flat-design-concept-for-system-analysis-vector-22363631" title="modern flat design concept for system analysis vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/36/31/modern-flat-design-concept-for-system-analysis-vector-22363631.jpg" title="modern flat design concept for system analysis" alt="modern flat design concept for system analysis vector image"></noscript></a></li>
+						<li data-id="30267019" data-title="data analitycs charts and research information" data-src="https://cdn5.vectorstock.com/i/thumbs/70/19/data-analitycs-charts-and-research-information-vector-30267019.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analitycs-charts-and-research-information-vector-30267019" title="data analitycs charts and research information vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/70/19/data-analitycs-charts-and-research-information-vector-30267019.jpg" title="data analitycs charts and research information" alt="data analitycs charts and research information vector image"></noscript></a></li>
+						<li data-id="27038921" data-title="market research infographic cloud design template" data-src="https://cdn2.vectorstock.com/i/thumbs/89/21/market-research-infographic-cloud-design-template-vector-27038921.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-research-infographic-cloud-design-template-vector-27038921" title="market research infographic cloud design template vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/89/21/market-research-infographic-cloud-design-template-vector-27038921.jpg" title="market research infographic cloud design template" alt="market research infographic cloud design template vector image"></noscript></a></li>
+						<li data-id="8085111" data-title="market analysis logo icon research" data-src="https://cdn2.vectorstock.com/i/thumbs/51/11/market-analysis-logo-icon-research-vector-8085111.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-analysis-logo-icon-research-vector-8085111" title="market analysis logo icon research vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/51/11/market-analysis-logo-icon-research-vector-8085111.jpg" title="market analysis logo icon research" alt="market analysis logo icon research vector image"></noscript></a></li>
+						<li data-id="33236295" data-title="big data analysis isometric landing page banner" data-src="https://cdn1.vectorstock.com/i/thumbs/62/95/big-data-analysis-isometric-landing-page-banner-vector-33236295.jpg"><a href="//www.vectorstock.com/royalty-free-vector/big-data-analysis-isometric-landing-page-banner-vector-33236295" title="big data analysis isometric landing page banner vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/62/95/big-data-analysis-isometric-landing-page-banner-vector-33236295.jpg" title="big data analysis isometric landing page banner" alt="big data analysis isometric landing page banner vector image"></noscript></a></li>
+						<li data-id="42316843" data-title="business performance research analysis project" data-src="https://cdn4.vectorstock.com/i/thumbs/68/43/business-performance-research-analysis-project-vector-42316843.jpg"><a href="//www.vectorstock.com/royalty-free-vector/business-performance-research-analysis-project-vector-42316843" title="business performance research analysis project vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/68/43/business-performance-research-analysis-project-vector-42316843.jpg" title="business performance research analysis project" alt="business performance research analysis project vector image"></noscript></a></li>
+						<li data-id="35980976" data-title="data analysis digital tech platform concept" data-src="https://cdn2.vectorstock.com/i/thumbs/09/76/data-analysis-digital-tech-platform-concept-vector-35980976.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analysis-digital-tech-platform-concept-vector-35980976" title="data analysis digital tech platform concept vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/09/76/data-analysis-digital-tech-platform-concept-vector-35980976.jpg" title="data analysis digital tech platform concept" alt="data analysis digital tech platform concept vector image"></noscript></a></li>
+						<li data-id="31020186" data-title="business analysis expert" data-src="https://cdn2.vectorstock.com/i/thumbs/01/86/business-analysis-expert-vector-31020186.jpg"><a href="//www.vectorstock.com/royalty-free-vector/business-analysis-expert-vector-31020186" title="business analysis expert vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/01/86/business-analysis-expert-vector-31020186.jpg" title="business analysis expert" alt="business analysis expert vector image"></noscript></a></li>
+						<li data-id="47438462" data-title="isometric business to marketing" data-src="https://cdn3.vectorstock.com/i/thumbs/84/62/isometric-business-to-marketing-vector-47438462.jpg"><a href="//www.vectorstock.com/royalty-free-vector/isometric-business-to-marketing-vector-47438462" title="isometric business to marketing vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/84/62/isometric-business-to-marketing-vector-47438462.jpg" title="isometric business to marketing" alt="isometric business to marketing vector image"></noscript></a></li>
+						<li data-id="14532419" data-title="market research icon" data-src="https://cdn5.vectorstock.com/i/thumbs/24/19/market-research-icon-vector-14532419.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-research-icon-vector-14532419" title="market research icon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/24/19/market-research-icon-vector-14532419.jpg" title="market research icon" alt="market research icon vector image"></noscript></a></li>
+						<li data-id="39809472" data-title="isometric concept of business analysis analytics" data-src="https://cdn3.vectorstock.com/i/thumbs/94/72/isometric-concept-of-business-analysis-analytics-vector-39809472.jpg"><a href="//www.vectorstock.com/royalty-free-vector/isometric-concept-of-business-analysis-analytics-vector-39809472" title="isometric concept of business analysis analytics vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/94/72/isometric-concept-of-business-analysis-analytics-vector-39809472.jpg" title="isometric concept of business analysis analytics" alt="isometric concept of business analysis analytics vector image"></noscript></a></li>
+						<li data-id="20511729" data-title="research results marketing data" data-src="https://cdn5.vectorstock.com/i/thumbs/17/29/research-results-marketing-data-vector-20511729.jpg"><a href="//www.vectorstock.com/royalty-free-vector/research-results-marketing-data-vector-20511729" title="research results marketing data vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/17/29/research-results-marketing-data-vector-20511729.jpg" title="research results marketing data" alt="research results marketing data vector image"></noscript></a></li>
+						<li data-id="14625167" data-title="search and analysis of information marketing" data-src="https://cdn3.vectorstock.com/i/thumbs/51/67/search-and-analysis-of-information-marketing-vector-14625167.jpg"><a href="//www.vectorstock.com/royalty-free-vector/search-and-analysis-of-information-marketing-vector-14625167" title="search and analysis of information marketing vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/51/67/search-and-analysis-of-information-marketing-vector-14625167.jpg" title="search and analysis of information marketing" alt="search and analysis of information marketing vector image"></noscript></a></li>
+						<li data-id="47438458" data-title="isometric business to marketing" data-src="https://cdn4.vectorstock.com/i/thumbs/84/58/isometric-business-to-marketing-vector-47438458.jpg"><a href="//www.vectorstock.com/royalty-free-vector/isometric-business-to-marketing-vector-47438458" title="isometric business to marketing vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/84/58/isometric-business-to-marketing-vector-47438458.jpg" title="isometric business to marketing" alt="isometric business to marketing vector image"></noscript></a></li>
+						<li class="more"><div><a href="/royalty-free-vectors/vectors-similar-to_31718556" rel="nofollow"><span class="lrg">More Images&hellip;</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="/royalty-free-vectors/vectors-by_Quarta" rel="nofollow">Quarta</a></strong></h6>
+
+				<div class="gallery_mosaic">
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-analysis-software-for-mobile-devices-vector-24429960">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.webp 2x, https://cdn.vectorstock.com/i/preview-1x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.webp 3x, https://cdn.vectorstock.com/i/preview-1x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.webp 2x, https://cdn.vectorstock.com/i/preview-lt/99/60/data-analysis-software-for-mobile-devices-vector-24429960.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/99/60/data-analysis-software-for-mobile-devices-vector-24429960.jpg" data-id="24429960" data-title="data analysis software for mobile devices" data-ratio="1" loading="lazy" alt="Data analysis software for mobile devices vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-flat-vector-31718555">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/55/data-collection-icon-market-research-flat-vector-31718555.webp 2x, https://cdn.vectorstock.com/i/preview-1x/85/55/data-collection-icon-market-research-flat-vector-31718555.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/85/55/data-collection-icon-market-research-flat-vector-31718555.webp 3x, https://cdn.vectorstock.com/i/preview-1x/85/55/data-collection-icon-market-research-flat-vector-31718555.webp 2x, https://cdn.vectorstock.com/i/preview-lt/85/55/data-collection-icon-market-research-flat-vector-31718555.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/55/data-collection-icon-market-research-flat-vector-31718555.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/85/55/data-collection-icon-market-research-flat-vector-31718555.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/85/55/data-collection-icon-market-research-flat-vector-31718555.jpg" data-id="31718555" data-title="data collection icon market research flat" data-ratio="1" loading="lazy" alt="Data collection icon market research flat vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-information-falls-vector-31718557">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/57/data-collection-icon-information-falls-vector-31718557.webp 2x, https://cdn.vectorstock.com/i/preview-1x/85/57/data-collection-icon-information-falls-vector-31718557.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/85/57/data-collection-icon-information-falls-vector-31718557.webp 3x, https://cdn.vectorstock.com/i/preview-1x/85/57/data-collection-icon-information-falls-vector-31718557.webp 2x, https://cdn.vectorstock.com/i/preview-lt/85/57/data-collection-icon-information-falls-vector-31718557.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/57/data-collection-icon-information-falls-vector-31718557.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/85/57/data-collection-icon-information-falls-vector-31718557.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/85/57/data-collection-icon-information-falls-vector-31718557.jpg" data-id="31718557" data-title="data collection icon information falls" data-ratio="1" loading="lazy" alt="Data collection icon information falls vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-analysis-software-for-mobile-devices-vector-24430098">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.webp 2x, https://cdn.vectorstock.com/i/preview-1x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.webp 3x, https://cdn.vectorstock.com/i/preview-1x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.webp 2x, https://cdn.vectorstock.com/i/preview-lt/00/98/data-analysis-software-for-mobile-devices-vector-24430098.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/00/98/data-analysis-software-for-mobile-devices-vector-24430098.jpg" data-id="24430098" data-title="data analysis software for mobile devices" data-ratio="1" loading="lazy" alt="Data analysis software for mobile devices vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-flat-vector-31718559">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/59/data-collection-icon-market-research-flat-vector-31718559.webp 2x, https://cdn.vectorstock.com/i/preview-1x/85/59/data-collection-icon-market-research-flat-vector-31718559.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/85/59/data-collection-icon-market-research-flat-vector-31718559.webp 3x, https://cdn.vectorstock.com/i/preview-1x/85/59/data-collection-icon-market-research-flat-vector-31718559.webp 2x, https://cdn.vectorstock.com/i/preview-lt/85/59/data-collection-icon-market-research-flat-vector-31718559.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/59/data-collection-icon-market-research-flat-vector-31718559.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/85/59/data-collection-icon-market-research-flat-vector-31718559.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/85/59/data-collection-icon-market-research-flat-vector-31718559.jpg" data-id="31718559" data-title="data collection icon market research flat" data-ratio="1" loading="lazy" alt="Data collection icon market research flat vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/mobile-analitics-concept-services-of-applications-vector-24232226">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.webp 2x, https://cdn.vectorstock.com/i/preview-1x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.webp 3x, https://cdn.vectorstock.com/i/preview-1x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.webp 2x, https://cdn.vectorstock.com/i/preview-lt/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/22/26/mobile-analitics-concept-services-of-applications-vector-24232226.jpg" data-id="24232226" data-title="mobile analitics concept services of applications" data-ratio="1.004" loading="lazy" alt="Mobile analitics concept services of applications vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-information-falls-vector-31771273">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/12/73/data-collection-icon-information-falls-vector-31771273.webp 2x, https://cdn.vectorstock.com/i/preview-1x/12/73/data-collection-icon-information-falls-vector-31771273.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/12/73/data-collection-icon-information-falls-vector-31771273.webp 3x, https://cdn.vectorstock.com/i/preview-1x/12/73/data-collection-icon-information-falls-vector-31771273.webp 2x, https://cdn.vectorstock.com/i/preview-lt/12/73/data-collection-icon-information-falls-vector-31771273.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/12/73/data-collection-icon-information-falls-vector-31771273.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/12/73/data-collection-icon-information-falls-vector-31771273.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/12/73/data-collection-icon-information-falls-vector-31771273.jpg" data-id="31771273" data-title="data collection icon information falls" data-ratio="1" loading="lazy" alt="Data collection icon information falls vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/data-collection-icon-market-research-flat-vector-31718558">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/58/data-collection-icon-market-research-flat-vector-31718558.webp 2x, https://cdn.vectorstock.com/i/preview-1x/85/58/data-collection-icon-market-research-flat-vector-31718558.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/85/58/data-collection-icon-market-research-flat-vector-31718558.webp 3x, https://cdn.vectorstock.com/i/preview-1x/85/58/data-collection-icon-market-research-flat-vector-31718558.webp 2x, https://cdn.vectorstock.com/i/preview-lt/85/58/data-collection-icon-market-research-flat-vector-31718558.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/85/58/data-collection-icon-market-research-flat-vector-31718558.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/85/58/data-collection-icon-market-research-flat-vector-31718558.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/85/58/data-collection-icon-market-research-flat-vector-31718558.jpg" data-id="31718558" data-title="data collection icon market research flat" data-ratio="1" loading="lazy" alt="Data collection icon market research flat vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.webp 2x, https://cdn.vectorstock.com/i/preview-1x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.webp 3x, https://cdn.vectorstock.com/i/preview-1x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.webp 2x, https://cdn.vectorstock.com/i/preview-lt/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/41/07/evaluate-icon-mission-vision-plan-and-analysis-vector-38924107.jpg" data-id="38924107" data-title="evaluate icon mission vision plan and analysis" data-ratio="1" loading="lazy" alt="Evaluate icon mission vision plan and analysis vector">
+							</picture>
+						</a>
+					</div></figure>
+					<figure><div class="inner">
+						<a href="https://www.vectorstock.com/royalty-free-vector/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003">
+							<picture>
+								<source type="image/webp" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.webp 2x, https://cdn.vectorstock.com/i/preview-1x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.webp 1.5x">
+								<source type="image/webp" srcset="https://cdn.vectorstock.com/i/preview-2x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.webp 3x, https://cdn.vectorstock.com/i/preview-1x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.webp 2x, https://cdn.vectorstock.com/i/preview-lt/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.webp 1x">
+								<source type="image/jpeg" media="(min-width: 1047px)" srcset="https://cdn.vectorstock.com/i/preview-2x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.jpg 2x, https://cdn.vectorstock.com/i/preview-1x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.jpg 1.5x">
+								<img src="https://cdn.vectorstock.com/i/preview-1x/20/03/brainstorm-icons-cursor-arrow-points-to-a-yellow-vector-37232003.jpg" data-id="37232003" data-title="brainstorm icons cursor arrow points to a yellow" data-ratio="1" loading="lazy" alt="Brainstorm icons cursor arrow points to a yellow vector">
+							</picture>
+						</a>
+					</div></figure>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="40152486" data-title="strategy banner mission vision plan" data-src="https://cdn2.vectorstock.com/i/thumbs/24/86/strategy-banner-mission-vision-plan-vector-40152486.jpg"><a href="//www.vectorstock.com/royalty-free-vector/strategy-banner-mission-vision-plan-vector-40152486" title="strategy banner mission vision plan vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/24/86/strategy-banner-mission-vision-plan-vector-40152486.jpg" title="strategy banner mission vision plan" alt="strategy banner mission vision plan vector image vector image"></noscript></a></li>
+						<li data-id="38900938" data-title="strategy banner with icons mission vision plan" data-src="https://cdn4.vectorstock.com/i/thumbs/09/38/strategy-banner-with-icons-mission-vision-plan-vector-38900938.jpg"><a href="//www.vectorstock.com/royalty-free-vector/strategy-banner-with-icons-mission-vision-plan-vector-38900938" title="strategy banner with icons mission vision plan vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/09/38/strategy-banner-with-icons-mission-vision-plan-vector-38900938.jpg" title="strategy banner with icons mission vision plan" alt="strategy banner with icons mission vision plan vector image vector image"></noscript></a></li>
+						<li data-id="38900891" data-title="implementation icon business strategy flat" data-src="https://cdn2.vectorstock.com/i/thumbs/08/91/implementation-icon-business-strategy-flat-vector-38900891.jpg"><a href="//www.vectorstock.com/royalty-free-vector/implementation-icon-business-strategy-flat-vector-38900891" title="implementation icon business strategy flat vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/08/91/implementation-icon-business-strategy-flat-vector-38900891.jpg" title="implementation icon business strategy flat" alt="implementation icon business strategy flat vector image vector image"></noscript></a></li>
+						<li data-id="32512863" data-title="research and analysis implementation icon flat" data-src="https://cdn4.vectorstock.com/i/thumbs/28/63/research-and-analysis-implementation-icon-flat-vector-32512863.jpg"><a href="//www.vectorstock.com/royalty-free-vector/research-and-analysis-implementation-icon-flat-vector-32512863" title="research and analysis implementation icon flat vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/28/63/research-and-analysis-implementation-icon-flat-vector-32512863.jpg" title="research and analysis implementation icon flat" alt="research and analysis implementation icon flat vector image vector image"></noscript></a></li>
+						<li data-id="31718561" data-title="define objective and problem icon market research" data-src="https://cdn2.vectorstock.com/i/thumbs/85/61/define-objective-and-problem-icon-market-research-vector-31718561.jpg"><a href="//www.vectorstock.com/royalty-free-vector/define-objective-and-problem-icon-market-research-vector-31718561" title="define objective and problem icon market research vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/85/61/define-objective-and-problem-icon-market-research-vector-31718561.jpg" title="define objective and problem icon market research" alt="define objective and problem icon market research vector image vector image"></noscript></a></li>
+						<li data-id="32566217" data-title="define objective and problem icon market research" data-src="https://cdn3.vectorstock.com/i/thumbs/62/17/define-objective-and-problem-icon-market-research-vector-32566217.jpg"><a href="//www.vectorstock.com/royalty-free-vector/define-objective-and-problem-icon-market-research-vector-32566217" title="define objective and problem icon market research vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/62/17/define-objective-and-problem-icon-market-research-vector-32566217.jpg" title="define objective and problem icon market research" alt="define objective and problem icon market research vector image vector image"></noscript></a></li>
+						<li data-id="31718553" data-title="data analysis icon market research flat" data-src="https://cdn4.vectorstock.com/i/thumbs/85/53/data-analysis-icon-market-research-flat-vector-31718553.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analysis-icon-market-research-flat-vector-31718553" title="data analysis icon market research flat vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/85/53/data-analysis-icon-market-research-flat-vector-31718553.jpg" title="data analysis icon market research flat" alt="data analysis icon market research flat vector image vector image"></noscript></a></li>
+						<li data-id="30407241" data-title="analytics infographics pictograph strategy" data-src="https://cdn2.vectorstock.com/i/thumbs/72/41/analytics-infographics-pictograph-strategy-vector-30407241.jpg"><a href="//www.vectorstock.com/royalty-free-vector/analytics-infographics-pictograph-strategy-vector-30407241" title="analytics infographics pictograph strategy vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/72/41/analytics-infographics-pictograph-strategy-vector-30407241.jpg" title="analytics infographics pictograph strategy" alt="analytics infographics pictograph strategy vector image vector image"></noscript></a></li>
+						<li data-id="31564520" data-title="market research concept banner data analysis" data-src="https://cdn1.vectorstock.com/i/thumbs/45/20/market-research-concept-banner-data-analysis-vector-31564520.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-research-concept-banner-data-analysis-vector-31564520" title="market research concept banner data analysis vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/45/20/market-research-concept-banner-data-analysis-vector-31564520.jpg" title="market research concept banner data analysis" alt="market research concept banner data analysis vector image vector image"></noscript></a></li>
+						<li data-id="31755491" data-title="data analysis icon market research flat" data-src="https://cdn2.vectorstock.com/i/thumbs/54/91/data-analysis-icon-market-research-flat-vector-31755491.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analysis-icon-market-research-flat-vector-31755491" title="data analysis icon market research flat vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/54/91/data-analysis-icon-market-research-flat-vector-31755491.jpg" title="data analysis icon market research flat" alt="data analysis icon market research flat vector image vector image"></noscript></a></li>
+						<li data-id="33285710" data-title="data analysis icon chart and arrows on laptop" data-src="https://cdn1.vectorstock.com/i/thumbs/57/10/data-analysis-icon-chart-and-arrows-on-laptop-vector-33285710.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analysis-icon-chart-and-arrows-on-laptop-vector-33285710" title="data analysis icon chart and arrows on laptop vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/57/10/data-analysis-icon-chart-and-arrows-on-laptop-vector-33285710.jpg" title="data analysis icon chart and arrows on laptop" alt="data analysis icon chart and arrows on laptop vector image vector image"></noscript></a></li>
+						<li data-id="31718562" data-title="define objective and problem icon market research" data-src="https://cdn3.vectorstock.com/i/thumbs/85/62/define-objective-and-problem-icon-market-research-vector-31718562.jpg"><a href="//www.vectorstock.com/royalty-free-vector/define-objective-and-problem-icon-market-research-vector-31718562" title="define objective and problem icon market research vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/85/62/define-objective-and-problem-icon-market-research-vector-31718562.jpg" title="define objective and problem icon market research" alt="define objective and problem icon market research vector image vector image"></noscript></a></li>
+						<li data-id="35044681" data-title="market research infographics icons flat" data-src="https://cdn2.vectorstock.com/i/thumbs/46/81/market-research-infographics-icons-flat-vector-35044681.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-research-infographics-icons-flat-vector-35044681" title="market research infographics icons flat vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/46/81/market-research-infographics-icons-flat-vector-35044681.jpg" title="market research infographics icons flat" alt="market research infographics icons flat vector image vector image"></noscript></a></li>
+						<li data-id="32149971" data-title="define objective and problem icon market research" data-src="https://cdn2.vectorstock.com/i/thumbs/99/71/define-objective-and-problem-icon-market-research-vector-32149971.jpg"><a href="//www.vectorstock.com/royalty-free-vector/define-objective-and-problem-icon-market-research-vector-32149971" title="define objective and problem icon market research vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/99/71/define-objective-and-problem-icon-market-research-vector-32149971.jpg" title="define objective and problem icon market research" alt="define objective and problem icon market research vector image vector image"></noscript></a></li>
+						<li data-id="31718564" data-title="define objective and problem icon market research" data-src="https://cdn5.vectorstock.com/i/thumbs/85/64/define-objective-and-problem-icon-market-research-vector-31718564.jpg"><a href="//www.vectorstock.com/royalty-free-vector/define-objective-and-problem-icon-market-research-vector-31718564" title="define objective and problem icon market research vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/85/64/define-objective-and-problem-icon-market-research-vector-31718564.jpg" title="define objective and problem icon market research" alt="define objective and problem icon market research vector image vector image"></noscript></a></li>
+						<li data-id="31718552" data-title="data analysis icon chart and arrows on laptop" data-src="https://cdn3.vectorstock.com/i/thumbs/85/52/data-analysis-icon-chart-and-arrows-on-laptop-vector-31718552.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-analysis-icon-chart-and-arrows-on-laptop-vector-31718552" title="data analysis icon chart and arrows on laptop vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/85/52/data-analysis-icon-chart-and-arrows-on-laptop-vector-31718552.jpg" title="data analysis icon chart and arrows on laptop" alt="data analysis icon chart and arrows on laptop vector image vector image"></noscript></a></li>
+						<li data-id="31718560" data-title="data processing icon flat business" data-src="https://cdn1.vectorstock.com/i/thumbs/85/60/data-processing-icon-flat-business-vector-31718560.jpg"><a href="//www.vectorstock.com/royalty-free-vector/data-processing-icon-flat-business-vector-31718560" title="data processing icon flat business vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/85/60/data-processing-icon-flat-business-vector-31718560.jpg" title="data processing icon flat business" alt="data processing icon flat business vector image vector image"></noscript></a></li>
+						<li data-id="37466764" data-title="market research concept banner define objective" data-src="https://cdn5.vectorstock.com/i/thumbs/67/64/market-research-concept-banner-define-objective-vector-37466764.jpg"><a href="//www.vectorstock.com/royalty-free-vector/market-research-concept-banner-define-objective-vector-37466764" title="market research concept banner define objective vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/67/64/market-research-concept-banner-define-objective-vector-37466764.jpg" title="market research concept banner define objective" alt="market research concept banner define objective vector image vector image"></noscript></a></li>
+						<li data-id="30407239" data-title="analytics infographics pictograph strategy" data-src="https://cdn5.vectorstock.com/i/thumbs/72/39/analytics-infographics-pictograph-strategy-vector-30407239.jpg"><a href="//www.vectorstock.com/royalty-free-vector/analytics-infographics-pictograph-strategy-vector-30407239" title="analytics infographics pictograph strategy vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/72/39/analytics-infographics-pictograph-strategy-vector-30407239.jpg" title="analytics infographics pictograph strategy" alt="analytics infographics pictograph strategy vector image vector image"></noscript></a></li>
+						<li data-id="32512858" data-title="research design icons report pie chart flat" data-src="https://cdn4.vectorstock.com/i/thumbs/28/58/research-design-icons-report-pie-chart-flat-vector-32512858.jpg"><a href="//www.vectorstock.com/royalty-free-vector/research-design-icons-report-pie-chart-flat-vector-32512858" title="research design icons report pie chart flat vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/28/58/research-design-icons-report-pie-chart-flat-vector-32512858.jpg" title="research design icons report pie chart flat" alt="research design icons report pie chart flat vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="/royalty-free-vectors/vectors-by_Quarta" rel="nofollow"><span class="lrg">More Images&hellip;</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="/royalty-free-vectors/research-vectors">Research</a></li>
+					<li><a href="/royalty-free-vectors/system-vectors">System</a></li>
+					<li><a href="/royalty-free-vectors/analysis-vectors">Analysis</a></li>
+					<li><a href="/royalty-free-vectors/data-vectors">Data</a></li>
+					<li><a href="/royalty-free-vectors/collection-vectors">Collection</a></li>
+					<li><a href="/royalty-free-vectors/icon-vectors">Icon</a></li>
+					<li><a href="/royalty-free-vectors/information-vectors">Information</a></li>
+					<li><a href="/royalty-free-vectors/market-vectors">Market</a></li>
+					<li><a href="/royalty-free-vectors/business-vectors">Business</a></li>
+					<li><a href="/royalty-free-vectors/action-vectors">Action</a></li>
+					<li><a href="/royalty-free-vectors/mail-vectors">Mail</a></li>
+					<li><a href="/royalty-free-vectors/web-vectors">Web</a></li>
+					<li><a href="/royalty-free-vectors/flat-vectors">Flat</a></li>
+					<li><a href="/royalty-free-vectors/gathering-vectors">Gathering</a></li>
+					<li><a href="/royalty-free-vectors/target-vectors">Target</a></li>
+					<li><a href="/royalty-free-vectors/banner-vectors">Banner</a></li>
+					<li><a href="/royalty-free-vectors/finance-vectors">Finance</a></li>
+					<li><a href="/royalty-free-vectors/answer-vectors">Answer</a></li>
+					<li><a href="/royalty-free-vectors/question-vectors">Question</a></li>
+					<li><a href="/royalty-free-vectors/chart-vectors">Chart</a></li>
+					<li><a href="/royalty-free-vectors/interview-vectors">Interview</a></li>
+					<li><a href="/royalty-free-vectors/goal-vectors">Goal</a></li>
+					<li><a href="/royalty-free-vectors/online-vectors">Online</a></li>
+					<li><a href="/royalty-free-vectors/survey-vectors">Survey</a></li>
+					<li><a href="/royalty-free-vectors/marketing-vectors">Marketing</a></li>
+					<li><a href="/royalty-free-vectors/database-vectors">Database</a></li>
+					<li><a href="/royalty-free-vectors/measuring-vectors">Measuring</a></li>
+					<li><a href="/royalty-free-vectors/downloading-vectors">Downloading</a></li>
+					<li><a href="/royalty-free-vectors/app-vectors">App</a></li>
+					<li><a href="/royalty-free-vectors/infographic-vectors">Infographic</a></li>
+					<li><a href="/royalty-free-vectors/vector-vectors">Vector</a></li>
+					<li><a href="/royalty-free-vectors/illustration-vectors">Illustration</a></li>
+					<li><a href="/royalty-free-vectors/processing-vectors">Processing</a></li>
+					<li><a href="/royalty-free-vectors/phone-vectors">Phone</a></li>
+					<li><a href="/royalty-free-vectors/computer-vectors">Computer</a></li>
+					<li><a href="/royalty-free-vectors/design-vectors">Design</a></li>
+					<li><a href="/royalty-free-vectors/internet-vectors">Internet</a></li>
+					<li><a href="/royalty-free-vectors/website-vectors">Website</a></li>
+					<li><a href="/royalty-free-vectors/money-vectors">Money</a></li>
+					<li><a href="/royalty-free-vectors/development-vectors">Development</a></li>
+					<li><a href="/royalty-free-vectors/management-vectors">Management</a></li>
+					<li><a href="/royalty-free-vectors/report-vectors">Report</a></li>
+					<li><a href="/royalty-free-vectors/problem-vectors">Problem</a></li>
+					<li><a href="/royalty-free-vectors/strategy-vectors">Strategy</a></li>
+					<li><a href="/royalty-free-vectors/statistics-vectors">Statistics</a></li>
+					<li><a href="/royalty-free-vectors/e-commerce-vectors">E Commerce</a></li>
+					<li><a href="/royalty-free-vectors/consulting-vectors">Consulting</a></li>
+					<li><a href="/royalty-free-vectors/define-vectors">Define</a></li>
+					<li><a href="/royalty-free-vectors/objective-vectors">Objective</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="/" title="Home">Home</a></li>
+					<li class="sel"><a href="/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+				<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="/signup" title="Join Now">Join Now</a></li>
+						<li><a href="/pricing" title="Pricing">Pricing</a></li>
+						<li><a href="/?signup=1&contributor=1" title="Contributor Sign Up">Contributor Sign Up</a></li>
+						<li><a href="/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="https://www.facebook.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="https://pinterest.com/vectorstock/" target="_blank" rel="noreferrer"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock&reg;">VectorStock&reg;</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				&copy; 2023. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" nonce="oa/Ml8huL71fQhkkEHM7ZDySC+XdzgP0QAuXIM2RyHc=">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJFw0GEg==","queueTime":0,"applicationTime":49,"atts":"SRoHQ14YGEo=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+	<script id="_a_admitag" src="https://cdn.teleportapi.com/admitag.min.js?campaign_code=69ba13f9ec" defer></script><script nonce='oa/Ml8huL71fQhkkEHM7ZDySC+XdzgP0QAuXIM2RyHc=' type="text/javascript">try{var cookie_name="deduplication_cookie",days_to_store=90,deduplication_cookie_value="admitad",channel_name="utm_source";getSourceParamFromUri=function(){return(new RegExp(channel_name+"=([^&]+)").exec(document.location.search)||[])[1]||""},getSourceCookie=function(){var e=document.cookie.match(new RegExp("(?:^|; )"+cookie_name.replace(/([\.$?*|{}\(\)\[\]\\/\+^])/g,"\$1")+"=([^;]*)"));return e?decodeURIComponent(e[1]):void 0},setSourceCookie=function(){var e=getSourceParamFromUri(),o=new URL(document.location).searchParams;if(!o.get(channel_name)&&o.get("gclid"))e="advAutoMarkup";else if(!e)return;var n=new Date(60*days_to_store*60*24*1e3+ +new Date),a=cookie_name+"="+e+"; path=/; expires="+n.toGMTString();document.cookie=a,document.cookie=a+"; domain=."+location.host},setSourceCookie();}catch(e){}</script>
+	<script id="profitwell-js" data-pw-auth="1051055e2c0cbe1da2ab7ca0abe9bc55" nonce="oa/Ml8huL71fQhkkEHM7ZDySC+XdzgP0QAuXIM2RyHc=">
+	$(document).ready(function() {(function(i,s,o,g,r,a,m){i[o]=i[o]||function(){(i[o].q=i[o].q||[]).push(arguments)}; a=s.createElement(g);m=s.getElementsByTagName(g)[0];a.async=1;a.src=r+'?auth='+s.getElementById(o+'-js').getAttribute('data-pw-auth');m.parentNode.insertBefore(a,m);})(window,document,'profitwell','script','https://public.profitwell.com/js/profitwell.js');
+	profitwell('start', {});});</script>
+
+</body>
+</html>

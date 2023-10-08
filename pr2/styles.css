@@ -1,0 +1,20 @@
+/* Style for square buttons */
+a { 
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    width: 150px; /* Set a fixed width for square buttons */
+    height: 50px; /* Set a fixed height for square buttons */
+    font-size: large;
+    background-color: #007bff; /* Set the default background color */
+    color: #fff; /* Set the default text color */
+    line-height: 50px; /* Center the text vertically */
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Change background-color and text color on hover */
+a:hover {
+    background-color: rgb(197, 133, 49); /* Change to your desired hover background color */
+    color: #fff; /* Change to your desired hover text color */
+}
