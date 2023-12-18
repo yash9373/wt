@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="todoApp">
+<head>
+    <!-- ... (your existing styles) ... -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .todo-container {
+            width: 500px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .todo-header {
+            background-color: #ffa37b;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Times New Roman', Times, serif
+        }
+
+        .todo-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .todo-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .todo-item input[type="text"] {
+            flex: 1;
+            margin-right: 10px;
+            padding: 5px;
+        }
+
+        .btn {
+            cursor: pointer;
+            background-color: #78730d;
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+
+        .btn-delete {
+            background-color: #1386f2;
+            margin-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="TodoController" class="todo-container">
+        <div class="todo-header">
+            To-Do List
+        </div>
+        <ul class="todo-list">
+            <li ng-repeat="task in tasks" class="todo-item">
+                <input type="checkbox" />
+                <input type="text" ng-model="task.name" ng-disabled="!task.editing" />
+                <button class="btn" ng-click="toggleEdit(task)">{{ task.editing ? 'Save' : 'Edit' }}</button>
+                <button class="btn btn-delete" ng-click="deleteTask(task)">Delete</button>
+            </li>
+        </ul>
+        <div class="todo-item">
+            <input type="text" ng-model="newTask" placeholder="Add a new task" />
+            <button class="btn" ng-click="addTask()">Add</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module('todoApp', []);
+
+        app.controller('TodoController', function($scope) {
+            $scope.tasks = [];
+
+            $scope.addTask = function() {
+                if ($scope.newTask) {
+                    $scope.tasks.push({ name: $scope.newTask, editing: false });
+                    $scope.newTask = '';
+                }
+            };
+
+            $scope.toggleEdit = function(task) {
+                if (task.editing) {
+                    // Save changes when editing is done
+                    task.editing = false;
+                } else {
+                    // Start editing
+                    task.editing = true;
+                    // Store the original name for canceling edits
+                    task.updatedName = task.name;
+                }
+            };
+
+            $scope.deleteTask = function(task) {
+                var index = $scope.tasks.indexOf(task);
+                if (index !== -1) {
+                    $scope.tasks.splice(index, 1);
+                }
+            };
+        });
+    </script>
+</body>
+</html>

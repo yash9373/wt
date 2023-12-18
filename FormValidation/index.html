@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <form id="bookform" onsubmit="validate(event)">
+            <h1>Form Validation</h1><br>
+            <label for="sr">Enter the sr:</label><br>
+            <input type="text" id="sr" required><br><br>
+            <label for="name">Enter the Name:</label><br>
+            <input type="text" id="name"><br><br>
+            <label for="url">Enter the link:</label><br>
+            <input type="url" id="url" ><br><br>
+            <label for="phone">Enter the phone:</label><br>
+            <input type="tel" id="phone" ><br><br>
+            <input type="submit">
+        </form>
+    </div>
+
+    <script>
+        function validate(event) {
+            event.preventDefault(); // Prevent the form from submitting by default
+
+            var sr = document.getElementById('sr').value;
+            var name = document.getElementById('name').value;
+            var url = document.getElementById('url').value;
+            var phone = document.getElementById('phone').value;
+
+            var lin = /^[a-z]+[:]+[/]+[a-z]+[.]+[a-z]+$/;
+            var pn = /^[0-9]{10}$/;
+
+            if (!sr || !name || !url || !phone) {
+                alert('Enter the correct info');
+                return false;
+            } else if (!lin.test(url)){
+                alert("Enter a valid URL");
+                return false;
+            } else if (!pn.test(phone)) {
+                alert("Enter a valid 10-digit phone number");
+                return false;
+            } else {
+                alert("Successful");
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
