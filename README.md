@@ -1,26 +1,24 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+System.out.println("Welcome to Servlet");
 
-public class YourClassName {
+Connection con = null;
 
-    public static Connection connect() throws SQLException {
-        String url = "jdbc:mysql://localhost/database";
-        String user = "username";
-        String password = "password";
+try {
+    Class.forName("com.mysql.jdbc.Driver");
+    con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "Omsai");
 
-        try {
-            return DriverManager.getConnection(url, user, password);
-        } catch (SQLException e) {
-            throw new SQLException("Failed to connect to the database.", e);
-        }
+    if (con != null) {
+        System.out.println("Connection is established");
+    } else {
+        System.out.println("Error in connection");
     }
-
-    public static void main(String[] args) {
-        try (Connection connection = connect()) {
-            // Do something with the connection if needed
-        } catch (SQLException e) {
-            e.printStackTrace(); // Handle the exception appropriately
+} catch (Exception e) {
+    System.out.println(e);
+} finally {
+    try {
+        if (con != null) {
+            con.close();
         }
+    } catch (SQLException se) {
+        System.out.println(se);
     }
 }
